@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomeWork</title>
+	<style>
+		.wrap{
+			font-family: Comic Sans MS,arial,helvetica,sans-serif;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			background-image: url(https://www.ruan8.com/uploadimg/image/20180819/20180819133610_54956.jpg);
+			background-repeat: no-repeat;
+			background-position: right top;
+			background-attachment: fixed;
+		}
+		.left{
+			background-color: lightgray;
+		}
+		.left,.right{
+			width: 50%;
+			height: 100%;
+			border: 2px solid darkblue;
+		}
+		@media only screen and (max-width: 767px;){
+			.wrap{
+				flex-direction: column;
+			}
+			.left,.right{
+				width: 100%;
+			}
+		}
+		.left .img{
+			width: 200px;
+			height: 200px;
+			border-radius: 100%;
+	        overflow: hidden;
+			margin: auto;
+			border: 2px solid darkblue;
+		}
+		.left .img img{
+			width: 100%;
+			object-fit: cover;
+			height: 200px;
+		}
+		.left .photo h1,.left .photo h2{
+			text-align: center;
+		}
+		.photo{
+			padding: 50px 0;
+		}
+		.left .contact{
+			text-align: center;
+		}
+		.outer,.outer2{
+			width: 300px;
+			height: 32px;
+			position: relative;
+			background-color: black;
+			border-radius: 16px;
+			border: 1px solid darkblue;
+			margin-left: 200px; 
+			margin-top: 19px;
+		}
+		.inside{
+			width: 97%;
+			height: 24px;
+			position: absolute;
+			left: 4px;
+			top: 3px;
+			background-color: yellow;
+			border-radius: 13px;
+			border: 1px solid darkblue;
+		}
+		.inside2{
+			width: 10%;
+			height: 24px;
+			position: absolute;
+			left: 4px;
+			top: 3px;
+			background-color: yellow;
+			border-radius: 13px;
+			border: 1px solid darkblue;
+		}
+		.outer3,.outer4{
+			width: 250px;
+			height: 60px;
+			position: relative;
+			background-color: black;
+			border-radius: 36px;
+			border: 1px solid darkblue;
+		}
+		.inside3{
+			width: 630px;
+			height: 52px;
+			position: absolute;
+			left: 4px;
+			top: 3px;
+			background-color: red;
+			border-radius: 30px;
+			border: 1px solid black;
+		}
+		.inside4{
+			width: 500px;
+			height: 52px;
+			position: absolute;
+			left: 4px;
+			top: 3px;
+			background-color: blue;
+			border-radius: 30px;
+			border: 1px solid black;
+		}
+		.left .language{
+			text-align: center;
+		}
+		.chinese,.english{
+			background-color: mediumseagreen;
+			border: 3px double darkblue;
+			width: 60px;
+			margin-left: 320px;
+			border-color: red orange yellow orange;
+		}
+		.letter1,.letter2{
+			margin-left: 23px;
+		}
+		.school,.work,.pskill{
+			padding: 30px;
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<div class="wrap">
+		<div class="left">
+			<div class="photo">
+				<div class="img">
+					<img src="https://p1.pstatp.com/large/1dc7000296d56e62bf23" alt="">
+				</div>
+				<h1>大大</h1>
+				<h2>BigBig</h2>
+			</div>
+
+			<div class="contact">
+				<h2>聯絡方式</h2>
+<hr size="2" color="darkblue" width="50%">
+				<p class="email">Email : 1234@abcd.com</p>
+				<p class="phone">Phone : 0912-345-678</p>	
+			</div>
+
+			<div class="language">
+				<h2>語言</h2>
+<hr size="2" color="darkblue" width="50%">
+                <p class="chinese">中文</p>
+				<div class="skill">
+				    <div class="outer">
+					    <div class="inside"></div>
+				    </div>
+			    </div>
+			    <p>100/100</p>
+			    <p class="english">英文</p>
+			    <div class="skill2">
+			    	<div class="outer2">
+			    		<div class="inside2"></div>
+			    	</div>
+			    </div>
+			    <p>100/13.1687543674789378</p>	
+			</div>
+
+		</div>
+
+		<div class="right">
+		    <div class="school">
+		    	<h2>學歷</h2>
+<hr size="2" color="darkblue">
+                <p>2011 - 2016/在學經歷</p>
+                <li>家裡蹲國際大學 米蟲系</li>
+                <p class="letter1">PHD畢業論文及獲選十大傑出青年論文：研究如何在最有限的時間之內，吃飽喝足洗洗睡</p>		
+		    </div>
+		    <div class="work">
+		    	<h2>工作經驗</h2>
+<hr size="2" color="darkblue">
+		    	<p>2016 - 至今</p>
+		    	<li>宅神國際股份有限公司 董事長</li>
+		    	<p class="letter2">致力於提申東南亞地區等多國宅男足不出戶的功力，效力至今，效果卓越，人人有目共睹之</p>
+			    </div>
+
+		    <div class="pskill">
+		    	<h1>專業能力</h1>
+<hr size="2" color="darkblue">
+                <h2>遊戲能力</h2>
+		    	<div class="skill3">
+		    		<div class="outer3">
+		    			<div class="inside3"></div>
+		    		</div>
+		    	</div>
+		    	<h2>"再來啊!!"專業囂張100/300</h2>
+<br><br><br>
+		    	<h2>教育公信力</h2>
+		    	<div class="skill4">
+		    		<div class="outer4">
+		    			<div class="inside4"></div>
+		    		</div>
+		    	</div>
+		    	<h2>"快回家找你媽媽拿10元!!"，專業教育值100/250</h2>
+		    </div>		
+		</div>
+
+	</div>
+	
+</body>
+</html>
